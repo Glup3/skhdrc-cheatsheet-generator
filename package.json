@@ -1,5 +1,5 @@
 {
-  "name": "skhdrc-cheatsheet-generator",
+  "name": "skhdrc-generator",
   "version": "1.0.0",
   "description": "Generates a markdown cheatsheet file for a skhdrc file",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
   },
   "scripts": {},
   "bin": {
-    "skhdrc-cheatsheet-generator": "src/cli.js"
+    "skhdrc-generator": "src/cli.js"
   },
   "keywords": [],
   "author": "Tran Phuc",
