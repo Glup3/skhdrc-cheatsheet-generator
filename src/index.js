@@ -51,6 +51,8 @@ module.exports = function () {
     writeFileSync(cwd + '/skhdrc-cheatsheet.md', markdown, {
       encoding: 'utf-8',
     });
+
+    console.log('Successfully generated markdown cheatsheet!');
   } catch (e) {
     if (e.syscall == 'open') {
       console.error(`ERROR: Couldn't locate skhdrc file at "${cwd}"`);
