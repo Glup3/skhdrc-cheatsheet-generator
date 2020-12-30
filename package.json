@@ -1,0 +1,23 @@
+{
+  "name": "skhdrc-cheatsheet-generator",
+  "version": "1.0.0",
+  "description": "Generates a markdown cheatsheet file for a skhdrc file",
+  "main": "src/index.js",
+  "dependencies": {
+    "commander": "^6.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "scripts": {},
+  "bin": {
+    "skhdrc-cheatsheet-generator": "src/cli.js"
+  },
+  "keywords": [],
+  "author": "Tran Phuc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Glup3/skhdrc-cheatsheet-generator.git"
+  }
+}
