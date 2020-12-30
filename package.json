@@ -19,8 +19,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Glup3/skhdrc-cheatsheet-generator.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
