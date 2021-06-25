@@ -1,6 +1,6 @@
 {
   "name": "skhdrc-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generates a markdown cheatsheet file for a skhdrc file",
   "main": "src/index.js",
   "dependencies": {

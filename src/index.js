@@ -39,13 +39,13 @@ module.exports = function () {
         lookingForKeycodes = false;
       }
 
-      const command = trimmedLine.split(':');
-      const commandArgs = command[0].trim().split('-');
-      const commandKey = commandArgs[1].trim();
-      const commandKeyModified = commandKey.startsWith('0x') ? commandKey : commandKey.toUpperCase();
+      const commandParts = trimmedLine.split(':');
+      const commandArgs = commandParts[0].trim().split('-');
+      const commandKeyRaw = commandArgs[1].trim();
+      const commandKey = commandKeyRaw.startsWith('0x') ? commandKeyRaw : commandKeyRaw.toUpperCase();
+      const command = commandParts[1].trim().replace(/\|/g, '\\|');
 
-      markdown +=
-        '| ' + commandArgs[0].toUpperCase() + ' + ' + commandKeyModified + ' | ' + `\`${command[1].trim()}\` |\n`;
+      markdown += '| ' + commandArgs[0].trim().toUpperCase() + ' + ' + commandKey + ' | ' + `\`${command}\` |\n`;
     }
 
     writeFileSync(cwd + '/skhdrc-cheatsheet.md', markdown, {
